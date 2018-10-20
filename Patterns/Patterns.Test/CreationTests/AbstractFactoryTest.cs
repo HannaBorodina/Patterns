@@ -14,8 +14,8 @@ namespace Patterns.Test
             Assert.IsType(expected, man);
             Assert.True(man.abstractBody.Height == height);
             Assert.True(man.abstractSoul.FootballLove == fooLove);
-            Assert.True(man.GetSoulInfo().Contains(soulInfoVar));
-            Assert.True(man.GetBodyInfo().Contains(bodyInfoVar));
+            Assert.Contains(soulInfoVar, man.GetSoulInfo());
+            Assert.Contains(bodyInfoVar, man.GetBodyInfo());
         }
 
         [Theory(DisplayName = "CreateWoman")]
@@ -28,8 +28,8 @@ namespace Patterns.Test
             Assert.IsType(expected, woman);
             Assert.True(woman.abstractBody.Height == height);
             Assert.True(woman.abstractSoul.FootballLove == fooLove);
-            Assert.True(woman.GetSoulInfo().Contains(soulInfoVar));
-            Assert.True(woman.GetBodyInfo().Contains(bodyInfoVar));
+            Assert.Contains(soulInfoVar, woman.GetSoulInfo());
+            Assert.Contains(bodyInfoVar, woman.GetBodyInfo());
         }
 
         [Theory(DisplayName = "CreateAlien")]
@@ -42,8 +42,8 @@ namespace Patterns.Test
             Assert.IsType(expected, alien);
             Assert.True(alien.abstractBody.Height == height);
             Assert.True(alien.abstractSoul.FootballLove == fooLove);
-            Assert.True(alien.GetSoulInfo().Contains(soulInfoVar));
-            Assert.True(alien.GetBodyInfo().Contains(bodyInfoVar));
+            Assert.Contains(soulInfoVar, alien.GetSoulInfo());
+            Assert.Contains(bodyInfoVar, alien.GetBodyInfo());
         }
 
 

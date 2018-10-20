@@ -40,13 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractFactory.cs" />
-    <Compile Include="ChainOfRensponsibility.cs" />
+    <Compile Include="BehaviourPatterns\Observer.cs" />
+    <Compile Include="BehaviourPatterns\TemplateMethod.cs" />
+    <Compile Include="CreationPatterns\AbstractFactory.cs" />
+    <Compile Include="CreationPatterns\Builder.cs" />
+    <Compile Include="BehaviourPatterns\ChainOfRensponsibility.cs" />
     <Compile Include="Decorator.cs" />
-    <Compile Include="FactoryMethod.cs" />
+    <Compile Include="CreationPatterns\FactoryMethod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Singletone.cs" />
-    <Compile Include="Strategy.cs" />
+    <Compile Include="CreationPatterns\Prototype.cs" />
+    <Compile Include="CreationPatterns\Singletone.cs" />
+    <Compile Include="BehaviourPatterns\Strategy.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

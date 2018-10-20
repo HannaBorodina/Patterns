@@ -4,8 +4,7 @@ namespace Patterns.Test
 {
     public class DecoratorTest
     {
-        [Theory(DisplayName ="Test Decorator methods with small house")]
-        [InlineData]
+        [Fact(DisplayName ="Test Decorator methods with small house")]
         public void TryDecoratorWithSmallHouse()
         {
             House house = new SmallWoodenHouse();
@@ -17,8 +16,7 @@ namespace Patterns.Test
 
         }
 
-        [Theory(DisplayName = "Test Decorator methods with big house")]
-        [InlineData]
+        [Fact(DisplayName = "Test Decorator methods with big house")]
         public void TryDecoratorWithBigHouse()
         {
             House house = new BigCoolHouse();

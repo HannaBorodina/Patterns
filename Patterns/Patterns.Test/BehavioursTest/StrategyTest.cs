@@ -4,8 +4,7 @@ namespace Patterns.Test
 {
     public class StrategyTest
     {
-        [Theory(DisplayName = "Dentist, Psychologist, Ophtalmologist")]
-        [InlineData]
+        [Fact(DisplayName = "Dentist, Psychologist, Ophtalmologist")]
         public void AskDentist()
         {
             var person = new Patient(new Dentist());

@@ -30,7 +30,7 @@ namespace Patterns.Test
 
         }
 
-        [Theory(DisplayName = "Test without Thread")]
+        [Theory(DisplayName = "Test without Thread", Skip ="run single")]
         [InlineData("Hanna", "Hanna2")]
         public void WithoutThreadTest(string name, string testName)
         {
